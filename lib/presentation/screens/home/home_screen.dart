@@ -1,4 +1,5 @@
 import 'package:banking_flutter_app/config/menu/menu_items.dart';
+// import 'package:banking_flutter_app/presentation/screens/buttons/buttons_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -49,7 +50,13 @@ class _CustomListTile extends StatelessWidget {
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subtitle),
       onTap: () {
-        // TODO: navigate to a different screen
+        // using Flutter Navigation https://docs.flutter.dev/ui/navigation
+        // Navigator.of(context).push(
+        //   MaterialPageRoute(
+        //     builder: (context) => const ButtonsScreen()
+        //   ),
+        // );
+        Navigator.pushNamed(context, menuItem.link);
       },
     );
   }
