@@ -1,9 +1,12 @@
 import 'package:banking_flutter_app/config/menu/menu_items.dart';
+// import 'package:banking_flutter_app/presentation/screens/screens.dart';
 // import 'package:banking_flutter_app/presentation/screens/buttons/buttons_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const String name = 'home_screen';
+
   const HomeScreen({super.key});
 
   @override
@@ -42,7 +45,7 @@ class _CustomListTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
+    
     final colors = Theme.of(context).colorScheme;
 
     return ListTile(
@@ -60,8 +63,9 @@ class _CustomListTile extends StatelessWidget {
         // Navigator.pushNamed(context, menuItem.link);
 
         // using go_router https://pub.dev/documentation/go_router/latest/topics/Navigation-topic.html
+        // context.pushNamed( CardsScreen.name );
         context.push(menuItem.link);
-
+        
       },
     );
   }
