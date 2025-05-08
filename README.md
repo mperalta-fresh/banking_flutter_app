@@ -18,6 +18,7 @@ This projetc is split into two broad layers, the UI layer and the Data layer.
   * **Repositories**: responsible for polling data from services, and transforming that raw data into domain models.
   * **Services**: wrap API endpoints and expose asynchronous response objects.
 
+**Architecture diagram**
 ![Architecture diagram](/assets/architecture_app.png)
 
 The following is how the code is organized combining organization by *feature* and by *type*, Data layer aren't tied to a single feature, while UI layer are.
