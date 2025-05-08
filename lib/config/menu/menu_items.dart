@@ -1,4 +1,4 @@
-import 'package:banking_flutter_app/config/router/routes.dart';
+import 'package:banking_flutter_app/routing/routes.dart';
 // import 'package:flutter/material.dart' show IconData;
 import 'package:flutter/material.dart';
 
