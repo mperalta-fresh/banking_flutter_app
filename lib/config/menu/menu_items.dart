@@ -1,3 +1,4 @@
+import 'package:banking_flutter_app/config/router/routes.dart';
 // import 'package:flutter/material.dart' show IconData;
 import 'package:flutter/material.dart';
 
@@ -16,19 +17,19 @@ class MenuItem {
   });
 }
 
-const appMenuItems = <MenuItem>[
+final appMenuItems = <MenuItem>[
   
   MenuItem(
     title: 'Botones',
     subtitle: 'Varios botones en Flutter',
-    link: '/buttons',
+    link: privateRoutes['buttons']!,
     icon: Icons.smart_button_outlined
   ),
 
   MenuItem(
     title: 'Tarjetas',
     subtitle: 'Un contenedor estilizado',
-    link: '/cards',
+    link: privateRoutes['cards']!,
     icon: Icons.credit_card
   ),
 

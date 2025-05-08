@@ -1,3 +1,4 @@
+import 'package:banking_flutter_app/config/router/routes.dart';
 import 'package:banking_flutter_app/presentation/screens/screens.dart';
 import 'package:go_router/go_router.dart';
 
@@ -6,17 +7,17 @@ final appRouter = GoRouter(
   initialLocation: '/',
   routes: [
     GoRoute(
-      path: '/',
+      path: privateRoutes['home']!,
       name: HomeScreen.name,
       builder: (context, state) => const HomeScreen(),
     ),
     GoRoute(
-      path: '/buttons',
+      path: privateRoutes['buttons']!,
       name: ButtonsScreen.name,
       builder: (context, state) => const ButtonsScreen(),
     ),
     GoRoute(
-      path: '/cards',
+      path: privateRoutes['cards']!,
       name: CardsScreen.name,
       builder: (context, state) => const CardsScreen(),
     ),
