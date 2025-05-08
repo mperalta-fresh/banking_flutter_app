@@ -1,7 +1,5 @@
+import 'package:banking_flutter_app/config/router/app_router.dart';
 import 'package:banking_flutter_app/config/theme/app_theme.dart';
-import 'package:banking_flutter_app/presentation/screens/buttons/buttons_screen.dart';
-import 'package:banking_flutter_app/presentation/screens/cards/cards_screen.dart';
-import 'package:banking_flutter_app/presentation/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,14 +11,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: appRouter,
       debugShowCheckedModeBanner: false,
       theme: AppTheme(selectedColor: 0).getTheme(),
-      home: HomeScreen(),
-      routes: {
-        '/buttons': (context) => const ButtonsScreen(), 
-        '/cards': (context) => const CardsScreen(), 
-      },
     );
   }
 }

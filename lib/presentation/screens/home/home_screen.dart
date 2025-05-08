@@ -1,6 +1,7 @@
 import 'package:banking_flutter_app/config/menu/menu_items.dart';
 // import 'package:banking_flutter_app/presentation/screens/buttons/buttons_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -56,7 +57,11 @@ class _CustomListTile extends StatelessWidget {
         //     builder: (context) => const ButtonsScreen()
         //   ),
         // );
-        Navigator.pushNamed(context, menuItem.link);
+        // Navigator.pushNamed(context, menuItem.link);
+
+        // using go_router https://pub.dev/documentation/go_router/latest/topics/Navigation-topic.html
+        context.push(menuItem.link);
+
       },
     );
   }
