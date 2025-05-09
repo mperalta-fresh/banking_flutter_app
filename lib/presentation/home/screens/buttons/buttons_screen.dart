@@ -1,3 +1,4 @@
+import 'package:banking_flutter_app/presentation/core/shared_widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -66,7 +67,7 @@ class _ButtonsView extends StatelessWidget {
               label: const Text('Text Icon')
             ),
 
-            // TODO: custom button
+            CustomButtom(),
 
             IconButton(onPressed: (){}, icon: const Icon( Icons.app_registration_rounded )),
             IconButton(
