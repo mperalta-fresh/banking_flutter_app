@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CustomButtom extends StatelessWidget {
-  const CustomButtom({super.key});
+class CustomButton extends StatelessWidget {
+  const CustomButton({super.key});
 
   @override
   Widget build(BuildContext context) {
